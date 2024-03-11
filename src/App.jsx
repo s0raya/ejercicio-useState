@@ -4,8 +4,7 @@ import {useState} from 'react';
 function App() {
     const [name, setName] = useState('Sofia');
     const [newName, setNewName] = useState('');
-
-    /*** BONUS */ 
+    
     const changeName = (e) => {
         e.preventDefault();
         if(newName.trim() !== "") {
@@ -14,19 +13,6 @@ function App() {
         } else alert("Please enter a name!"); 
     }
 
-    /**** NO BONUS *****/
-    /*return (
-        <div>
-            <h2>Teacher Name: {name}</h2>
-            <ul>
-                <li onClick={() => setName("Data")}>Data</li>
-                <li onClick={() => setName("Yol")}>Yol</li>
-                <li onClick={() => setName("Reyes")}>Reyes</li>
-            </ul>
-        </div>
-    );*/
-
-    /**** BONUS ****/
     return (
         <div>
             <h2>Teacher Name: {name}</h2>
