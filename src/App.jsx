@@ -14,7 +14,7 @@ function App() {
     }
 
     return (
-        <div>
+        <>
             <h2>Teacher Name: {name}</h2>
             <form onSubmit={changeName}>
                 <label>Nuevo Teacher: </label>
@@ -27,7 +27,7 @@ function App() {
                 <li onClick={() => setName("Reyes")}>Reyes</li>
             </ul>
 
-        </div>
+        </>
     )
 }
 
